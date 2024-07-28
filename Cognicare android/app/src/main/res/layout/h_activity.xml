@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Doctor 1 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dr"
+                    android:contentDescription="Doctor Image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Santhosh Y M"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Qualifications: MBBS, BCS(Health), FCPS(Surgery)"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:text="+88 09610010615"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Specialty: Breast, Colorectal, Laparoscopic\n&amp; General Surgery"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/scheduleButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule Appointment"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="onScheduleButtonClick" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Doctor 2 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dr"
+                    android:contentDescription="Doctor Image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Swaroop A"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Qualifications: MBBS, D-Ortho(DU), MS(Ortho)"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:text="+88 09610010615"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Specialty: Spine Surgery (Orthopaedic Spine Surgery)"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/scheduleButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule Appointment"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="onScheduleButtonClick" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Doctor 3 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dr"
+                    android:contentDescription="Doctor Image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Sujit Sigamani"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Qualifications: MBBS, FCPS(Surgery), MS(CVTS)"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:text="+8801823039800"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Specialty: Cardiac Surgery"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/scheduleButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule Appointment"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="onScheduleButtonClick" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/buttonViewAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonScheduleAppointment"
+            android:layout_marginTop="16dp"
+            android:onClick="viewAppointment"
+            android:text="View Appointments" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<resources>
+
+        <string name="app_name">Dementia Care</string>
+        <string name="logo_desc">App Logo</string>
+        <string name="welcome_message">Welcome to Dementia Care App</string>
+        <string name="start_agreement">Go To Activities</string>
+        <string name="info_text">Please read the agreement carefully before proceeding.</string>
+
+
+        <string-array name="appointment_types">
+                <item>Consultation</item>
+                <item>Follow-up</item>
+                <item>Emergency</item>
+                <item>Routine Check-up</item>
+                <item>Specialist Consultation</item>
+        </string-array>
+</resources>

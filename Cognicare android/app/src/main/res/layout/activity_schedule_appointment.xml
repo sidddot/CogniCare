@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name:"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPatientName"
+        android:hint="Enter patient name"/>
+
+    <TextView
+        android:id="@+id/textViewAppointmentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPatientName"
+        android:text="Appointment Type:"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerAppointmentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppointmentType"/>
+
+    <TextView
+        android:id="@+id/textViewContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerAppointmentType"
+        android:text="Contact Number:"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewContactNumber"
+        android:hint="Enter contact number"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/textViewReasonForVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContactNumber"
+        android:text="Reason for Visit:"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextReasonForVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewReasonForVisit"
+        android:hint="Enter reason for visit"/>
+
+    <TextView
+        android:id="@+id/textViewAppointmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextReasonForVisit"
+        android:text="Appointment Date:"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppointmentDate"
+        android:text="Pick Date"/>
+
+    <TextView
+        android:id="@+id/textViewAppointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPickDate"
+        android:text="Appointment Time:"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonPickTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppointmentTime"
+        android:text="Pick Time"/>
+
+    <Button
+        android:id="@+id/buttonScheduleAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPickTime"
+        android:layout_marginTop="16dp"
+        android:text="Schedule Appointment"
+        android:textSize="18sp"/>
+</RelativeLayout>

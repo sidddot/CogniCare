@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewAppointmentsActivity">
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        app:compactCalendarBackgroundColor="@android:color/white"
+        app:compactCalendarCurrentDayBackgroundColor="@android:color/holo_blue_light"
+        app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@android:color/holo_blue_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="316dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAppointmentDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compactcalendar_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select a date to view appointment details"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/compactcalendar_view"
+        android:layout_alignEnd="@+id/compactcalendar_view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="679dp"
+        android:text="View Appointments"
+        android:textSize="16sp" />
+
+</RelativeLayout>

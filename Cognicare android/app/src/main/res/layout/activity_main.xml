@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="391dp"
+        android:layout_height="316dp"
+        android:background="#E3BC49"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="151dp"
+        android:layout_height="139dp"
+        android:contentDescription="@string/logo_desc"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <TextView
+        android:id="@+id/welcome_text3"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:text="'The journey of a thousand miles begins with single step'"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <TextView
+        android:id="@+id/welcome_text2"
+        android:layout_width="286dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="528dp"
+        android:fontFamily="sans-serif-black"
+        android:text="CogniCare"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/agreement_button"
+        android:layout_width="207dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/start_agreement"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text3"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="207dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/agreement_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

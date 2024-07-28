@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "682466026839",
+    "project_id": "testing-alz",
+    "storage_bucket": "testing-alz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682466026839:android:ddaf02ef9d5705202e0a12",
+        "android_client_info": {
+          "package_name": "com.example.testingalz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv5kGCrO7hQn2Z0v6ukOwmDkDx_4mg77s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

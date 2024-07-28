@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgreementActivity">
+
+
+    <ImageView
+        android:id="@+id/logo_games"
+        android:layout_width="154dp"
+        android:layout_height="148dp"
+        android:src="@drawable/games"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <ImageView
+        android:id="@+id/logo_health"
+        android:layout_width="155dp"
+        android:layout_height="146dp"
+        android:src="@drawable/healthcare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <!-- Logo for Activity Planner button -->
+
+    <ImageView
+        android:id="@+id/logo_geotracking"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/geotracking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/health_button"
+        app:layout_constraintVertical_bias="0.323"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <!-- Buttons -->
+
+    <ImageView
+        android:id="@+id/logo_activity_planner"
+        android:layout_width="166dp"
+        android:layout_height="101dp"
+        android:src="@drawable/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="GotoGamesMenu"
+        android:text="Games"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/health_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="GoToHealthCare"
+        android:text="Health Care"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Geotracking"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="GoToActivityPlanner"
+        android:text="Activity Planner"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
+        app:layout_constraintWidth_percent="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

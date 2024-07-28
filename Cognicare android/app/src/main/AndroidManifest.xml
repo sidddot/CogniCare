@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testingalz">
+
+    <!-- Permission to set alarms -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestingAlz"
+        tools:targetApi="31">
+
+        <!-- LoginActivity as the main activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".TestOverActivity" />
+        <activity android:name=".ResultsActivity" />
+        <activity android:name=".NBackTestActivity" />
+        <activity android:name=".RandomWords" />
+        <activity android:name=".NbackExplanationActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".RandomWordsExplanationActivity" />
+        <activity android:name=".CardMatchExplainationActivity" />
+        <activity android:name=".MazeGameActivity" />
+        <activity android:name=".CardMatchActivity" />
+        <activity android:name=".AgreementActivity" />
+        <activity android:name=".MazeGameExplainationActivity" />
+        <activity android:name=".CorsiBlockExplanationActivity" />
+        <activity android:name=".CorsiBlockTestActivity" />
+        <activity android:name=".MemoryUpdatingActivity" />
+        <activity android:name=".MemoryUpdatingExplanationActivity" />
+        <activity android:name=".HealthMain" />
+        <activity android:name=".PlannerActivity" />
+        <activity android:name=".ScheduleAppointment"/>
+        <activity android:name=".ContactToScheduleActivity"/>
+<!--        <activity android:name=""-->
+        
+        <receiver android:name=".ReminderReciever" />
+        <receiver android:name=".NotificationReceiver"
+            android:exported="false">
+            <!-- Optionally add intent filters here -->
+        </receiver>
+    </application>
+
+</manifest>
